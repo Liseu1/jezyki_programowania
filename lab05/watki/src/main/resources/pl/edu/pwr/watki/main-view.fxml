@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+        alignment="CENTER"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="pl.edu.pwr.watki.controllers.MainController"
+        prefHeight="400.0" prefWidth="600.0"
+        fx:id="mainVbox">
+    <HBox fx:id="entryRamp" alignment="CENTER"></HBox>
+    <HBox fx:id="feeder" alignment="CENTER"></HBox>
+    <HBox fx:id="exitRamp" alignment="CENTER" ></HBox>
+</VBox>

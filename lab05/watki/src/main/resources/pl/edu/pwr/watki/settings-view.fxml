@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pl.edu.pwr.watki.controllers.SettingsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Miejsca na rampie wejściowej"/>
+    <TextField fx:id="entryRampField" text = "2" prefWidth="60"/>
+    <Label text="Miejsca na rampie wyjściowej"/>
+    <TextField fx:id="exitRampField" text = "4" prefWidth="60"/>
+    <Label text="Liczba podajników"/>
+    <TextField fx:id="feederCountField" text = "2" prefWidth="60"/>
+
+    <Button text = "Kontynuuj" onAction="#loadSettings" maxWidth="-Infinity"/>
+
+</VBox>
+
