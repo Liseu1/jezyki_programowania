@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" prefHeight="250.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pwr.sockety.tanker.TankerMainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="statusLabel" text="OCZEKIWANIE NA START...">
+        <font> <Font name="System Bold" size="16.0" /> </font>
+    </Label>
+
+    <VBox alignment="CENTER" spacing="5.0">
+        <Label text="Poziom Nieczystości:" />
+        <ProgressBar fx:id="capacityBar" prefWidth="300.0" progress="0.0" />
+        <Label fx:id="volumeLabel" text="0 / 0 L" />
+        <Button text="OPRÓŻNIJ" onAction="#onDump"/>
+    </VBox>
+
+</VBox>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pwr.sockety.sewage.SewageMainController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+
+    <Label text="DO ROZLICZENIA:" textFill="#d14444">
+        <font> <Font name="System Bold" size="14.0" /> </font>
+    </Label>
+
+    <TextArea fx:id="statusArea" editable="false" prefHeight="150.0" wrapText="true">
+        <font> <Font name="Monospaced Regular" size="13.0" /> </font>
+    </TextArea>
+
+    <Separator prefWidth="200.0" />
+
+    <Label text="HISTORIA PŁATNOŚCI:" textFill="#2c8a22">
+        <font> <Font name="System Bold" size="14.0" /> </font>
+    </Label>
+
+    <TextArea fx:id="historyArea" editable="false" prefHeight="150.0" wrapText="true">
+        <font> <Font name="Monospaced Regular" size="13.0" /> </font>
+    </TextArea>
+
+</VBox>

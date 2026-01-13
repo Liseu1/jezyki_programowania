@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pwr.sockety.house.HouseSettingsController">
+    <padding>
+        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+    </padding>
+
+    <Label text="Konfiguracja Domu">
+        <font> <Font name="System Bold" size="18.0" /> </font>
+        <VBox.margin> <Insets bottom="10.0" /> </VBox.margin>
+    </Label>
+
+    <Label text="USTAWIENIA LOKALNE" textFill="#6b6b6b"> <font><Font size="10.0" /></font> </Label>
+
+    <Label text="Port Domu:" />
+    <TextField fx:id="portField" promptText="np. 4000" text="4000" />
+
+    <Label text="Pojemność Szamba:" />
+    <TextField fx:id="capacityField" promptText="np. 20" text="20" />
+
+    <Separator prefWidth="200.0"> <VBox.margin> <Insets bottom="5.0" top="5.0" /> </VBox.margin> </Separator>
+
+    <Label text="POŁĄCZENIE Z BIUREM" textFill="#6b6b6b"> <font><Font size="10.0" /></font> </Label>
+
+    <Label text="Adres IP Biura:" />
+    <TextField fx:id="officeIpField" text="localhost" />
+
+    <Label text="Port Biura:" />
+    <TextField fx:id="officePortField" text="5000" />
+
+    <Button onAction="#onStart" text="URUCHOM" textAlignment="CENTER">
+        <VBox.margin> <Insets top="15.0" /> </VBox.margin>
+        <font> <Font name="System Bold" size="12.0" /> </font>
+    </Button>
+</VBox>
